@@ -47,14 +47,18 @@ Adding two number
 
 ```
 DECLARE
-    v_a CONSTANT := 10;
-    v_b CONSTANT := 20;
-    v_c CONSTANT;
+    v_a INT := 10;
+    v_b INT := 20;
+    v_c INT;
 
 BEGIN
-    v_c = v_a + v_b
+    v_c := v_a + v_b;
 
-    DBMS_OUTPUT.PUT_LINE('The addintion is : ' || v_c)
-
+    DBMS_OUTPUT.PUT_LINE('The addintion is :' || v_c);
 END;
 ```
+
+## NOTE:
+
+1. If we Declare the variable with `CONSTANT` and do not initilised it, then it will throw error.
+2. We can Declare the varible with no value then it can only be initialised in BEGIN section not in Declare Section.
