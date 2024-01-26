@@ -62,3 +62,5 @@ END;
 
 1. If we Declare the variable with `CONSTANT` and do not initilised it, then it will throw error.
 2. We can Declare the varible with no value then it can only be initialised in BEGIN section not in Declare Section.
+
+
